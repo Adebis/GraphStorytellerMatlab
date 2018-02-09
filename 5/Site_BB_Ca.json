@@ -1,0 +1,48 @@
+{
+	"max": 14.632,
+	"max_date": {
+		"Format": "dd-MMM-uuuu HH:mm:ss",
+		"TimeZone": "",
+		"Year": 2016,
+		"Month": 8,
+		"Day": 23,
+		"Hour": 0,
+		"Minute": 0,
+		"Second": 0,
+		"SystemTimeZone": "America\/New_York"
+	},
+	"min": 8.62,
+	"min_date": {
+		"Format": "dd-MMM-uuuu HH:mm:ss",
+		"TimeZone": "",
+		"Year": 2001,
+		"Month": 5,
+		"Day": 16,
+		"Hour": 0,
+		"Minute": 0,
+		"Second": 0,
+		"SystemTimeZone": "America\/New_York"
+	},
+	"std": 0.8949418334,
+	"mean": 11.27747154,
+	"rapid_grow_start": "01-May-2007",
+	"rapid_grow_end": "16-May-2007",
+	"rapid_down_start": "11-Apr-2012",
+	"rapid_down_end": "25-Apr-2012",
+	"major_up_peaks_x_values": [
+		"02-Oct-2007",
+		"09-Jun-2005",
+		"11-Nov-2014",
+		"04-Nov-1999",
+		"17-Nov-2010"
+	],
+	"major_up_peaks_y_values": [13.23,12.69,12.086,10.74,10.5],
+	"major_down_peaks_x_values": [
+		"12-Sep-2012",
+		"16-Apr-2002",
+		"07-Jun-2006",
+		"15-Apr-1998",
+		"01-Jun-2010"
+	],
+	"major_down_peaks_y_values": [10.205,10.3,11.5,10.66,11.3]
+}
