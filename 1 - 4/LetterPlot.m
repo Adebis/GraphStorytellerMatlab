@@ -74,11 +74,8 @@ function LetterPlot(kt,lakedata_desend,startp,endp)
             sum = [];
         end
     end
-    disp(M)
     % save begining point and end point into csv file
-    % , 'variableNames', {'index\value', 'start_x', 'start_y', 'end_x','end_y'}
-    T = array2table(M );
-    disp(T)
+    T = array2table(M,'variableNames', {'index_value', 'start_x', 'start_y', 'end_x','end_y'});
     writetable(T,'segments_value.csv');
     
     hold on
