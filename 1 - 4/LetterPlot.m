@@ -54,6 +54,7 @@ function LetterPlot(kt,lakedata_desend,startp,endp)
     sum = [];
     tu = [];
     tv = [];
+    M = zeros(6,5);
     for i=1:k
         if (u(i)<c*threshold)
             % eliminate NaN data points
@@ -61,6 +62,11 @@ function LetterPlot(kt,lakedata_desend,startp,endp)
                sum = [sum;v(i)];
             end
         else
+            M(c,1) = c;
+            M(c,2) = (c-1)*threshold;
+            M(c,4) = c*threshold;
+            M(c,3) = min(sum);
+            M(c,5) = max(sum);
             tu(c) = (c-1/2)*threshold;
             tv(c) = median(sum);
             size(sum)
@@ -68,6 +74,10 @@ function LetterPlot(kt,lakedata_desend,startp,endp)
             sum = [];
         end
     end
+    % save begining point and end point into csv file
+    T = array2table(M,'variableNames', {'index_value', 'start_x', 'start_y', 'end_x','end_y'});
+    writetable(T,'segments_value.csv');
+    
     hold on
     % Plot out median points found in scatter plot.
     plot(tu,tv,'.b');
